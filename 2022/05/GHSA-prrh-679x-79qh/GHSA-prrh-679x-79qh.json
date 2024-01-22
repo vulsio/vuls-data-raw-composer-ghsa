@@ -1,13 +1,13 @@
 {
 	"schema_version": "1.4.0",
-	"id": "GHSA-89f3-74m6-g27g",
-	"modified": "2023-08-17T22:18:44Z",
-	"published": "2022-05-13T01:12:59Z",
+	"id": "GHSA-prrh-679x-79qh",
+	"modified": "2024-01-22T17:08:52Z",
+	"published": "2022-05-13T01:12:58Z",
 	"aliases": [
-		"CVE-2013-1833"
+		"CVE-2013-1834"
 	],
-	"summary": "Moodle Multiple cross-site scripting (XSS) vulnerabilities in the File Picker module",
-	"details": "Multiple cross-site scripting (XSS) vulnerabilities in the File Picker module in Moodle 2.x through 2.1.10, 2.2.x before 2.2.8, 2.3.x before 2.3.5, and 2.4.x before 2.4.2 allow remote authenticated users to inject arbitrary web script or HTML via a crafted filename.",
+	"summary": "Moodle allows remote authenticated users to reassign notes",
+	"details": "notes/edit.php in Moodle 1.9.x through 1.9.19, 2.x through 2.1.10, 2.2.x before 2.2.8, 2.3.x before 2.3.5, and 2.4.x before 2.4.2 allows remote authenticated users to reassign notes via a modified (1) userid or (2) courseid field.",
 	"affected": [
 		{
 			"package": {
@@ -19,26 +19,7 @@
 					"type": "ECOSYSTEM",
 					"events": [
 						{
-							"introduced": "2.0.0"
-						},
-						{
-							"last_affected": "2.1.10"
-						}
-					]
-				}
-			]
-		},
-		{
-			"package": {
-				"ecosystem": "Packagist",
-				"name": "moodle/moodle"
-			},
-			"ranges": [
-				{
-					"type": "ECOSYSTEM",
-					"events": [
-						{
-							"introduced": "2.2.0"
+							"introduced": "1.9.0"
 						},
 						{
 							"fixed": "2.2.8"
@@ -89,23 +70,35 @@
 	"references": [
 		{
 			"type": "ADVISORY",
-			"url": "https://nvd.nist.gov/vuln/detail/CVE-2013-1833"
+			"url": "https://nvd.nist.gov/vuln/detail/CVE-2013-1834"
 		},
 		{
 			"type": "WEB",
-			"url": "https://github.com/moodle/moodle/commit/75822af579ec07cca1c6781a7c989625dcdd5463"
+			"url": "https://github.com/moodle/moodle/commit/1b628c489def6e7394821f53a838591aa392e332"
 		},
 		{
 			"type": "WEB",
-			"url": "https://github.com/moodle/moodle/commit/93e9ea9989ec6e91153d9651c9a4bc7dac1cf9ce"
+			"url": "https://github.com/moodle/moodle/commit/646059869e36ea1db844ee0884fb50020348dab1"
 		},
 		{
 			"type": "WEB",
-			"url": "https://github.com/moodle/moodle/commit/954b35451112c333c0ae77dff25dafbf41587c26"
+			"url": "https://github.com/moodle/moodle/commit/6a9235c998dab2ec0ddc49898a59dd5089156cb0"
 		},
 		{
 			"type": "WEB",
-			"url": "https://github.com/moodle/moodle/commit/ca2a7956b2957d8495e154409694d205bb4ae3ef"
+			"url": "https://github.com/moodle/moodle/commit/a28da5d9b8221e53d3a0815fd0a1dc27bd48816b"
+		},
+		{
+			"type": "WEB",
+			"url": "https://github.com/moodle/moodle/commit/bc144ebbe0a78a1ac854454246f26472ba0748b7"
+		},
+		{
+			"type": "WEB",
+			"url": "https://github.com/moodle/moodle/commit/e13f286026056febba20e931d71134a2d145a091"
+		},
+		{
+			"type": "WEB",
+			"url": "https://github.com/moodle/moodle/commit/ebfdc35f2a33f14051e22af5410485fe6f1afc92"
 		},
 		{
 			"type": "PACKAGE",
@@ -113,11 +106,11 @@
 		},
 		{
 			"type": "WEB",
-			"url": "https://moodle.org/mod/forum/discuss.php?d=225344"
+			"url": "https://moodle.org/mod/forum/discuss.php?d=225346"
 		},
 		{
 			"type": "WEB",
-			"url": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-37507"
+			"url": "http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-37411"
 		},
 		{
 			"type": "WEB",
@@ -134,11 +127,11 @@
 	],
 	"database_specific": {
 		"cwe_ids": [
-			"CWE-79"
+			"CWE-284"
 		],
 		"github_reviewed": true,
-		"github_reviewed_at": "2023-08-17T22:18:44Z",
+		"github_reviewed_at": "2024-01-22T17:08:52Z",
 		"nvd_published_at": "2013-03-25T21:55:00Z",
-		"severity": "LOW"
+		"severity": "MODERATE"
 	}
 }
