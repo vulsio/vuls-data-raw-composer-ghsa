@@ -97,6 +97,10 @@
 		},
 		{
 			"type": "WEB",
+			"url": "https://github.com/moodle/moodle/commit/db200a8e9f88c8c4a2141ac264062dca74ee2f29"
+		},
+		{
+			"type": "WEB",
 			"url": "https://github.com/moodle/moodle/commit/dd0607b7bbaff38cc62e4d00658c02da3fdbb4c8"
 		},
 		{
@@ -125,7 +129,9 @@
 		}
 	],
 	"database_specific": {
-		"cwe_ids": [],
+		"cwe_ids": [
+			"CWE-601"
+		],
 		"github_reviewed": true,
 		"github_reviewed_at": "2023-08-01T20:29:54Z",
 		"nvd_published_at": "2015-06-01T19:59:00Z",
