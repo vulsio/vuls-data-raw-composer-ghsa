@@ -19,10 +19,10 @@
 					"type": "ECOSYSTEM",
 					"events": [
 						{
-							"introduced": "0"
+							"introduced": "3.0.0"
 						},
 						{
-							"fixed": "2.16.5"
+							"fixed": "3.2.4"
 						}
 					]
 				}
@@ -38,10 +38,10 @@
 					"type": "ECOSYSTEM",
 					"events": [
 						{
-							"introduced": "3.0.0"
+							"introduced": "2.0.0"
 						},
 						{
-							"fixed": "3.2.4"
+							"fixed": "2.16.5"
 						}
 					]
 				}
@@ -64,6 +64,10 @@
 		{
 			"type": "WEB",
 			"url": "https://forum.mautic.org/c/announcements/16"
+		},
+		{
+			"type": "WEB",
+			"url": "https://github.com/FriendsOfPHP/security-advisories/blob/master/mautic/core/CVE-2020-35124.yaml"
 		},
 		{
 			"type": "WEB",
