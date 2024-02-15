@@ -48,7 +48,7 @@
 		},
 		{
 			"type": "WEB",
-			"url": "https://www.yiiframework.com/news/86/yii-2-0-4-is-released/"
+			"url": "https://www.yiiframework.com/news/86/yii-2-0-4-is-released"
 		},
 		{
 			"type": "WEB",
@@ -56,7 +56,7 @@
 		},
 		{
 			"type": "WEB",
-			"url": "http://www.yiiframework.com/news/86/yii-2-0-4-is-released/"
+			"url": "http://www.yiiframework.com/news/86/yii-2-0-4-is-released"
 		}
 	],
 	"database_specific": {
