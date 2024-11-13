@@ -59,7 +59,8 @@
 	],
 	"database_specific": {
 		"cwe_ids": [
-			"CWE-918"
+			"CWE-918",
+			"CWE-79"
 		],
 		"github_reviewed": true,
 		"github_reviewed_at": "2024-05-23T14:13:15Z",
